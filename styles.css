@@ -116,7 +116,7 @@ header, main{
 }
 #mountain{
     padding-top: 10px;
-    padding-left: 30px;
+    padding-left: 20px;
 }  
 
 .popular-tour{
@@ -156,16 +156,57 @@ header, main{
 
 }
 
+/* newsletter part styles */
+#nes-t{
+    font-size: 24px;
+}
+.newsletter{
+    
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.box{
+    border:2px solid #FF5400;
+    padding: 20px 20px 30px 20px;
+    height: 470px;
+}
+.badge{
+    margin-top: -8px;
+    padding-left: 380px;
+    width: 353px;
+    transform: rotate(-35deg);
+}
+#bdg{
+    margin-left: 165px;
+    font-size: 20px;
+    padding: 10px 15px;
+    width: 217px;
+    height: 120px;
+    font-weight: 600;
+}
+#mountain2{
+    padding-left: 70px;
+    width: 650px;
+    height: 500px;
+}
+#n-inp{
+    padding: 16px 145px 16px 10px;
+}
+.inp{
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 10px;
 
-
-
+}
 
 
 
 
 /* footer styles */
 footer{
-    margin-top: 20px;
+    margin-top: 10px;
     padding-top: 30px;
     background-color: rgba(19, 19, 24, 0.05);
     
@@ -234,8 +275,7 @@ footer{
         padding-right: 10px;
     }
     .banner{
-        position: center;
-        width: 460px;
+        width: 470px;
        
     }
     .banner-details{
@@ -265,11 +305,38 @@ footer{
     .places-row1, .places-row2, .places-row3{
         flex-direction: column;
     }
-    #maldives, #north-america, #srilanka, #banderban, #kashmir, #indonesia , #bangladesh{
+    #mountain2, #maldives, #north-america, #srilanka, #banderban, #kashmir, #indonesia , #bangladesh{
         width: 560px;
         height: 300px;
     }
+    
     .foot, .social-icons{
         padding-left: 200px;
+    }
+    .newsletter{
+        flex-direction: column;
+        gap: 30px;
+
+    }
+    .box{
+        height: 300px;
+    }
+    .box2{
+        width:560px ;
+        height:300px ;
+    }
+    .footer{
+        padding-top: 20px;
+    }
+    #mountain2{
+        padding-left:2px
+    }
+    .badge{
+        margin-left:-140px;
+        width: 240px;
+        height: 200px;
+    }
+    .mountain{
+        padding-left:-20px ;
     }
 }
