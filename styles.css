@@ -28,13 +28,13 @@ header{
     visibility: hidden;
 }
 #h-title{
-    margin-right: 430px;
+    margin-right: 420px;
     
 }
 nav ul{
     display: flex;
     list-style: none;
-    gap: 20px;
+    gap: 10px;
    
 }
  
@@ -43,7 +43,7 @@ nav ul{
 }
 nav {
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     
     
 }
@@ -181,7 +181,7 @@ nav {
 }
 
 .places-row1 ,.places-row2, .places-row3{
-    display:inline-flex;
+    display:flex;
     gap: 10px;
     padding-top: 10px;
 
@@ -237,6 +237,7 @@ nav {
 
 /* footer styles */
 footer{
+
     margin-top: 10px;
     padding-top: 30px;
     background-color: rgba(19, 19, 24, 0.05);
@@ -413,7 +414,7 @@ footer{
     color: #eb8756;
     background-color:rgb(243, 216, 167);
     border: 1px solid whitesmoke;
-    border-radius: 14px;
+    border-radius: 30%;
     font-weight: 800;
     transform-origin: 30%;
 }
@@ -425,7 +426,7 @@ footer{
 .r-ul{
     display: flex;
     justify-content: space-evenly;
-    gap: 4px;
+    gap: 16px;
     list-style: none;
 }
 .r-l{
@@ -442,13 +443,13 @@ footer{
 }
 .review{
     padding-bottom: 30px;
-    border: 1px solid wheat;
     margin-bottom: 50px;
 }
 /* responsive media query */
 @media screen and (max-width: 600px) {
     body{
         width:fit-content;
+        
     }
     .main-plc{
         flex-direction: column;
@@ -474,11 +475,12 @@ footer{
     }
     .menu{
         visibility: visible;
-        margin-left: -620px;
+        margin-left: -628px;
 
     }
     .banner{
-        width: 380px;
+        width: 360px;
+        margin-left:10px;
        
     }
     .banner-details{
@@ -487,36 +489,49 @@ footer{
 
     }
     .banner-title{
+        padding-top: 15px;
         font-size: 22px;
     }
     .banner-description{
-        font-size: 14px;
+        font-size: 16px;
     }
     .input-field{
-        padding-left:50px;
-        padding-right: 50px;
+        padding-left:10px;
+        padding-right: 10px; 
         flex-direction: column;
         gap: 7px;
         width:max-content;
+        margin-left: 75px;    
+    
     }
     .popular-tour{
         flex-direction: column;
     }
     .tour-details{
-        max-width: 400px;
+        width: 350px;
     }
-    .places-row1, .places-row2, .places-row3{
+    .places-row1 {
+        flex-direction: column;}
+    .places-row2{
         flex-direction: column;
-    }
+    }    
+    .places-row3 {
+        flex-direction: column;
+    } 
+
     #mountain2, #maldives, #north-america, #srilanka, #banderban, #kashmir, 
     #indonesia , #bangladesh {
-        width: 350px;
+        width: 380px;
         height: 300px;
     }
-    
-    .foot, .social-icons{
-        padding-left: 200px;
+    .des{
+        
+        width: 380px;
     }
+
+    /* .foot, .social-icons{
+        padding-left: 00px;
+    } */
     .newsletter{
         flex-direction: column;
         gap: 30px;
@@ -524,45 +539,87 @@ footer{
     }
     .box{
         height: 300px;
+        width: 330px;
     }
     .box2{
-        width:560px ;
+        width:340px ;
         height:300px ;
+        margin-left: -70px;
     }
-    .footer{
-        padding-top: 20px;
-    }
-    #mountain2{
-        padding-left:2px
-    }
+
+    
     .badge{
-        margin-left:-140px;
-        width: 240px;
-        height: 200px;
+        margin-left:-110px;
+        width: 40px;
+        height: 100px;
+        transform: rotate(-16deg);
     }
-    .mountain{
-        padding-left:-20px ;
+    #bdg{
+        margin-left: 65px;
+        font-size: 14px;
+        padding: 2px 5px;
+        width: 120px;
+        height: 70px;
+        font-weight: 300;}
+    #mountain{
+        margin-left:-20px ;
+        width: 380px;
+        height: 300px;
     }
     .card-prime{
         flex-direction: column;
     }
     .card-first-row, .card-first-row2, .card-second-row{
-        box-sizing: border-box;
+        
         width: 350px;
+        margin-left: -10px;
     }
     .card-second-row{
         margin-left: -4px;
 
+    }
+    .card-hd{
+        
+        width: 330px;
     }
     .r-ul{
         flex-direction: column;
     }
     #r{
         width: 180px;
-        margin-left: 50px;
+        margin-left: 70px;
     }
     #b-t{
         margin-left: -700px;
         font-size: x-large;
+    }
+    .review{
+        margin-left: -40px;
+    }
+    /* for footer part */
+    .footer{
+        width: 380px;
+
+        /* margin-left: -120px;
+        margin-right: 100px; */
+    }
+    .foot{
+        margin-left: -370px;
+        
+       
+    }
+    #f-des{
+        width: 350px;
+        margin-left: -15px;
+    }
+    .icons{
+        margin-left: -430px;
+    }
+    .line{
+        width: 350px;
+        
+    }
+    .copyright{
+        margin-left: -700px;
     }
 }
