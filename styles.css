@@ -242,6 +242,7 @@ footer{
     padding-top: 30px;
     background-color: rgba(19, 19, 24, 0.05);
     
+    
 }
 .foot{
     padding-left: 450px;
@@ -475,7 +476,7 @@ footer{
     }
     .menu{
         visibility: visible;
-        margin-left: -628px;
+        margin-left: -328px;
 
     }
     .banner{
@@ -598,6 +599,7 @@ footer{
     }
     /* for footer part */
     .footer{
+        background: border-box;
         width: 380px;
 
         /* margin-left: -120px;
