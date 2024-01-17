@@ -3,8 +3,13 @@
 /* shared styles */
 header, main{
     font-family: 'Mulish', sans-serif;
-    padding: 100px 50px 0px 80px;
+    margin-top: 20px ;
+    margin-right:50px ;
+    margin-left: 50px;
 
+}
+header{
+    padding-top: 30px ;
 }
 .description{
     color: rgba(19, 19, 24, 0.70);
@@ -18,6 +23,28 @@ header, main{
     border-style: none;
     color: white;
 }
+/* header styles */
+.menu{
+    visibility: hidden;
+}
+#h-title{
+    margin-right: 430px;
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+   
+}
+ 
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
 /* banner styling */
 .banner{
     background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%)
@@ -27,7 +54,7 @@ header, main{
     width:1100px;
     height: 500px;
     flex-shrink: 0;
-    margin-top: 100px;
+    margin-top: 20px;
     
     /* padding: 20px 50px 10px 50px; */
    
@@ -311,12 +338,31 @@ footer{
 }
 /* responsive media query */
 @media screen and (max-width: 600px) {
+    body{
+        width:fit-content;
+    } 
     main, header{
-        padding-left: 20px;
-        padding-right: 10px;
+        margin: 10px;
+        
+    }
+    #h-title{
+        font-size: 30px;
+    }
+    #h-icon{
+        width: 14px;
+        height: 10px;
+    } 
+    .ul{
+        visibility: hidden;
+
+    }
+    .menu{
+        visibility: visible;
+        margin-left: -620px;
+
     }
     .banner{
-        width: 470px;
+        width: 380px;
        
     }
     .banner-details{
