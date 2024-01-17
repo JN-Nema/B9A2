@@ -336,11 +336,81 @@ footer{
     justify-content: space-between;
     gap: 30px;
 }
+/* perfect place styles */
+#plc{
+    color: black;
+}
+#plc-details{
+    margin-top: -70px;
+    padding-right:40px ;
+}
+.video-icn{
+    margin-top: -30px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #131318 -31.96%, rgba(19, 19, 24, 0.00) 100%),
+    url(Images/Group\ 40089.png);
+    background-repeat: no-repeat;
+    width:550px ;
+    height: 380px;   
+    
+    
+}
+.v-icn{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    position: absolute;
+    top: 180px;
+    left: 400px;
+
+}
+.v-r{
+    
+    color: #FFF;
+    position: absolute;
+    top: 180px;
+    left: 30px;
+    
+}
+#bd{
+ 
+    color: #FFF;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    
+}
+.whole-v-r{
+    
+    display: inline-flex;
+    justify-content: space-between;
+    position: relative;
+
+
+}
+#rec-line{
+    width: 550px;
+    position: relative;
+    top:220px;
+} 
+.main-plc{
+    display:inline-flex;
+    justify-content: space-between;
+    
+} 
 /* responsive media query */
 @media screen and (max-width: 600px) {
     body{
         width:fit-content;
+    }
+    .main-plc{
+        flex-direction: column;
     } 
+    .video-icn{
+        margin-top: 30px;
+        width: 380px;
+    }
     main, header{
         margin: 10px;
         
