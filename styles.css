@@ -264,10 +264,51 @@ footer{
     margin-left: 30px;
     margin-right: 30px;
 
-
 }
 
+/* why-choose-use section styles */
+.why-choose-us{
+    margin-top: 70px;
+    margin-bottom: 70px;
+}
+.card{
+    padding-top: 30px;
+}
+.card-hd{
+    text-align: center;
+}
+#card-icn{
+    width: 45px;
+    height: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
+}
+.card-first-row, .card-first-row2, .card-second-row{
+    border-radius: 16px;
+    padding: 30px;
+    width: 550px;
+    height: 280px;
+}
+.card-first-row{
+    border: 1px solid rgba(251, 181, 99, 0.20);
+    background: rgba(251, 181, 99, 0.05);
+}
+.card-first-row2{
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
+
+}
+.card-second-row{
+    border: 1px solid rgba(233, 68, 68, 0.20);
+    background: rgba(233, 68, 68, 0.05);
+    margin:30px 280px 30px ; 
+}
+.card-prime{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
 /* responsive media query */
 @media screen and (max-width: 600px) {
     main, header{
@@ -305,8 +346,9 @@ footer{
     .places-row1, .places-row2, .places-row3{
         flex-direction: column;
     }
-    #mountain2, #maldives, #north-america, #srilanka, #banderban, #kashmir, #indonesia , #bangladesh{
-        width: 560px;
+    #mountain2, #maldives, #north-america, #srilanka, #banderban, #kashmir, 
+    #indonesia , #bangladesh {
+        width: 550px;
         height: 300px;
     }
     
@@ -338,5 +380,14 @@ footer{
     }
     .mountain{
         padding-left:-20px ;
+    }
+    .card-prime{
+        flex-direction: column;
+    }
+    .card-first-row, .card-first-row2, .card-second-row{
+        box-sizing: border-box;
+    }
+    .card-second-row{
+        margin-left: -4px;
     }
 }
